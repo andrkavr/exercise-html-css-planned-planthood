@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  max-width: 478px;
+}
+
+header {
+  background-image: url("./assets/Rectangle\ 31.png");
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 1rem;
+}
+
+header figcaption {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Maven Pro", sans-serif;
+  margin-top: 1rem;
+}
+
+.burger-menu {
+  position: absolute;
+  top: 4%;
+  left: 85%;
+  max-width: 20%;
+}
