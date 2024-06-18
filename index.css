@@ -2,13 +2,26 @@
   margin: 0;
   padding: 0;
   max-width: 478px;
+  box-sizing: border-box;
 }
+
 body {
   border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
 }
+
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  min-height: 582px;
+  max-height: 582px;
+  height: 100%;
+  width: 100%;
 }
 
 .heart-palm {
@@ -16,12 +29,13 @@ header {
   grid-column-start: 1;
   grid-column-end: 3;
   background-image: url("./assets/Rectangle\ 25.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  align-content: center;
   padding: 5rem 1rem 2.5rem 1rem;
+  max-height: 390px;
+  height: 100%;
 }
 
 .burger-menu {
@@ -37,4 +51,17 @@ header {
 
 .shovel {
   background: #0a846e;
+}
+
+.seedling,
+.shovel {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seedling img,
+.shovel img {
+  max-height: 124px;
 }
