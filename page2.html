@@ -17,13 +17,15 @@
     <main>
       <section class="new-plants">
         <h2>Lägg till ny plantering:</h2>
-        <section class="plant-type">
-          <label>Planta: </label>
-          <input type="text" />
-        </section>
-        <section class="plant-date">
-          <label>Datum:</label>
-          <input type="text" />
+        <section class="inputs">
+          <section class="plant-type">
+            <label>Planta: </label>
+            <input type="text" />
+          </section>
+          <section class="plant-date">
+            <label>Datum:</label>
+            <input type="text" />
+          </section>
         </section>
         <button type="submit">LÄGG TILL</button>
       </section>
@@ -32,13 +34,18 @@
         <section class="plant-display">
           <article>
             <figure>
-              <img src="./assets/Rectangle 13.png" alt="cucumber" />
+              <img
+                class="overlay-img"
+                src="./assets/flowerpot small.svg"
+                alt="flower pot"
+              />
             </figure>
             <section class="plant-info">
               <h4>Gurka</h4>
               <h5>15 april 2024</h5>
               <p>Rico Coolio</p>
               <img src="./assets/Vector (Stroke).svg" alt="trashcan" />
+              <button class="remove-button">TA BORT</button>
             </section>
           </article>
         </section>
@@ -48,24 +55,34 @@
         <section class="plant-display">
           <article>
             <figure>
-              <img src="./assets/Rectangle 13.png" alt="cucumber" />
+              <img
+                class="overlay-img"
+                src="./assets/flowerpot small.svg"
+                alt="flower pot"
+              />
             </figure>
             <section class="plant-info">
               <h4>Gurka</h4>
               <h5>15 april 2024</h5>
               <p>Rico Coolio</p>
               <img src="./assets/Vector (Stroke).svg" alt="trashcan" />
+              <button class="remove-button">TA BORT</button>
             </section>
           </article>
           <article>
             <figure>
-              <img src="./assets/Rectangle 13.png" alt="cucumber" />
+              <img
+                class="overlay-img"
+                src="./assets/flowerpot small.svg"
+                alt="flower pot"
+              />
             </figure>
             <section class="plant-info">
               <h4>Gurka</h4>
               <h5>15 april 2024</h5>
               <p>Rico Coolio</p>
               <img src="./assets/Vector (Stroke).svg" alt="trashcan" />
+              <button class="remove-button">TA BORT</button>
             </section>
           </article>
         </section>
@@ -74,17 +91,59 @@
     <footer>
       <section class="gallery">
         <figure>
-          <img src="./assets/Rectangle 26.png" alt="man inspecting plants" />
+          <picture>
+            <source
+              srcset="./assets/Rectangle26Large.png"
+              media="(min-width: 1000px)"
+            />
+            <source
+              srcset="./assets/Rectangle 26.png"
+              media="(max-width: 999px)"
+            />
+            <img src="./assets/Rectangle 26.png" alt="man inspecting plants" />
+          </picture>
         </figure>
         <figure>
-          <img src="./assets/Rectangle 27.png" alt="plants being watered" />
+          <picture>
+            <source
+              srcset="./assets/Rectangle27Large.png"
+              media="(min-width: 1000px)"
+            />
+            <source
+              srcset="./assets/Rectangle 27.png"
+              media="(max-width: 999px)"
+            />
+            <img src="./assets/Rectangle 27.png" alt="plants being watered" />
+          </picture>
         </figure>
-        <figure><img src="./assets/Rectangle 28.png" alt="carrots" /></figure>
         <figure>
-          <img
-            src="./assets/Rectangle 29.png"
-            alt="woman posing in front of plantation"
-          />
+          <picture>
+            <source
+              srcset="./assets/Rectangle28Large.png"
+              media="(min-width: 1000px)"
+            />
+            <source
+              srcset="./assets/Rectangle 28.png"
+              media="(max-width: 999px)"
+            />
+            <img src="./assets/Rectangle 28.png" alt="carrots" />
+          </picture>
+        </figure>
+        <figure>
+          <picture>
+            <source
+              srcset="./assets/Rectangle29Large.png"
+              media="(min-width: 1000px)"
+            />
+            <source
+              srcset="./assets/Rectangle 29.png"
+              media="(max-width: 999px)"
+            />
+            <img
+              src="./assets/Rectangle 29.png"
+              alt="woman posing in front of plantation"
+            />
+          </picture>
         </figure>
       </section>
 

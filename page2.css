@@ -2,7 +2,8 @@
 * {
   padding: 0;
   margin: 0;
-  max-width: 478px;
+  box-sizing: border-box;
+  /* max-width: 478px; */
 }
 
 header {
@@ -99,15 +100,33 @@ input {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.8rem;
+  width: 100%;
+}
+
+.plant-display figure {
+  background-image: url("./assets/Rectangle\ 13.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 220px;
+  min-width: 175px;
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .plant-display figure img {
   width: 100%;
 }
 
+.plant-display .overlay-img {
+  max-width: 50%;
+}
+
 .planned-plants article,
 .planted-plants article {
   box-shadow: 3px 4px 4px 0px #00000040;
+  min-height: 180px;
 }
 
 .plant-info {
@@ -143,6 +162,24 @@ input {
   margin-top: 0.5rem;
 }
 
+.plant-info button {
+  border-radius: 9px;
+  background-color: #b93857;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  align-self: center;
+  justify-self: flex-end;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+
 .planted-plants {
   margin-top: 2.5rem;
   margin-bottom: 2rem;
@@ -155,6 +192,7 @@ input {
   background-color: #9e6d52;
   padding: 1rem;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .gallery img {
@@ -172,4 +210,92 @@ footer a {
   font-size: 0.8rem;
   font-weight: 400;
   color: #000;
+}
+
+@media screen and (min-width: 1000px) {
+  .burger-menu {
+    display: none;
+  }
+
+  header {
+    background-position: center;
+    background-size: 100%;
+    padding: 2rem 1rem 5rem 1rem;
+  }
+
+  header figcaption {
+    font-size: 2.5rem;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  .new-plants {
+    margin: 2rem 0 1rem 0;
+  }
+
+  .new-plants h2 {
+    text-align: left;
+  }
+
+  .new-plants .inputs {
+    display: flex;
+    gap: 0 1.5rem;
+    width: auto;
+  }
+  .plant-type,
+  .plant-date {
+    width: 100%;
+  }
+
+  .planned-plants h3,
+  .planted-plants h3 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+  .planned-plants article,
+  .planted-plants article {
+    min-height: 410px;
+  }
+  .plant-display {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .plant-display figure {
+    min-height: 300px;
+  }
+
+  .plant-info h4 {
+    font-size: 1.5rem;
+  }
+
+  .plant-info h5 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .plant-info p {
+    font-size: 1rem;
+    align-self: center;
+  }
+
+  .plant-info img {
+    display: none;
+  }
+
+  .plant-info button {
+    display: flex;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 340px;
+    padding: 2rem;
+  }
+
+  .gallery figure img {
+    height: 100%;
+  }
 }
