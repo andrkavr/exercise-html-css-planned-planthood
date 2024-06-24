@@ -344,6 +344,13 @@ footer article h2 {
   gap: 0 0.2rem;
 }
 
+.phone p:hover,
+.phone img:hover,
+.email p:hover,
+.email img:hover {
+  cursor: pointer;
+}
+
 .phone {
   left: 1rem;
   bottom: 0.8rem;
@@ -381,6 +388,10 @@ button {
   /* margin-top: 0.7rem; */
 }
 
+button:hover {
+  background-color: #086957;
+}
+
 .plant-info button {
   border-radius: 9px;
   background-color: #b93857;
@@ -398,8 +409,16 @@ button {
   display: none;
 }
 
+.plant-info button:hover {
+  background-color: #952b44;
+}
+
 .show-more-button {
   text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
 }
 /*#endregion */
 
@@ -443,6 +462,12 @@ button {
     font-weight: 500;
     line-height: 23.5px;
     color: #055647;
+    padding: 1rem;
+  }
+
+  nav a:hover {
+    background-color: #055647;
+    color: #fff;
   }
 
   h1 {
