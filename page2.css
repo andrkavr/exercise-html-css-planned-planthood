@@ -6,7 +6,18 @@
   /* max-width: 478px; */
 }
 
-header {
+body {
+  max-width: 1440px;
+  background-color: #fcf5fc;
+}
+
+.wrapper {
+  max-width: 1000px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.header-main {
   background-image: url("./assets/Rectangle\ 31.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,6 +35,10 @@ header figcaption {
   text-align: center;
   font-family: "Maven Pro", sans-serif;
   margin-top: 1rem;
+}
+
+nav {
+  display: none;
 }
 
 .burger-menu {
@@ -216,8 +231,13 @@ footer a {
   .burger-menu {
     display: none;
   }
-
+  /* 
   header {
+    background-position: center;
+    background-size: 100%;
+    padding: 2rem 1rem 5rem 1rem;
+  } */
+  .header-main {
     background-position: center;
     background-size: 100%;
     padding: 2rem 1rem 5rem 1rem;
@@ -225,6 +245,21 @@ footer a {
 
   header figcaption {
     font-size: 2.5rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.7rem 0;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-family: "Maven Pro";
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 23.5px;
+    color: #055647;
   }
 
   main {
@@ -244,6 +279,7 @@ footer a {
     gap: 0 1.5rem;
     width: auto;
   }
+
   .plant-type,
   .plant-date {
     width: 100%;
@@ -254,10 +290,12 @@ footer a {
     font-size: 2rem;
     padding-bottom: 2rem;
   }
+
   .planned-plants article,
   .planted-plants article {
     min-height: 410px;
   }
+
   .plant-display {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
